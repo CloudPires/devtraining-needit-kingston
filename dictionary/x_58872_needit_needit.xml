@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element default="201" label="Date submitted" mandatory="true" max_length="8" name="date_submitted" type="glide_date"/>
+        <element label="New field 1" max_length="40" name="new_field_1" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal" label="Request type" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element label="Human Resources" sequence="0" value="hr"/>
+                <element label="Facilities" sequence="1" value="facilities"/>
+                <element label="Legal" sequence="2" value="legal"/>
+                <element label="Your Department Choice" sequence="3" value="your_choice"/>
+            </choice>
+        </element>
+        <element label="Date opened" mandatory="true" max_length="40" name="u_glide_date_time_2" type="glide_date_time"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_reference_for" reference="sys_user" type="reference"/>
+    </element>
+</database>
